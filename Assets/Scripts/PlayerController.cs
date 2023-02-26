@@ -35,6 +35,7 @@ public class PlayerController : MonoBehaviour
             timerate = Time.time + firerate;
             Instantiate(quad_bullet,transform.position,bullet.rotation);
             Debug.Log(bullet.position.ToString());
+            GetComponent<AudioSource>().Play();
         }
     }
 
